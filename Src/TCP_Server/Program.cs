@@ -2,12 +2,13 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             try
             {
-                Server server = new Server();
-                server.StartServer();
+                Server server = new Server("127.0.0.1",1235);
+                await server.StartServer();
+                
             }catch (Exception ex)
             {
                 Console.WriteLine("Error occured : ",ex.Message);   
