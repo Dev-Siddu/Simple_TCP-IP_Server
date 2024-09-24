@@ -5,3 +5,6 @@
       - Gets the data from client
       - Process the data ( here processing is simple i.e Convering all the data into upper case letters )
       - Sends the data to client.
+
+
+* Now this server is able to handle more than one client at time.
